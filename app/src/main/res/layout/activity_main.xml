@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.lab56.sligamer.soundjukbox.MainActivity">
+
+    <ImageView
+        android:id="@+id/titleAppImg"
+        android:layout_height="57dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bellClangBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/app_title"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageButton
+        android:id="@+id/bellClangBtn"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleAppImg"
+        app:srcCompat="@drawable/bell_clang"
+        android:contentDescription="@string/bell_clang"/>
+
+    <ImageButton
+        android:id="@+id/funkyGongBtn"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/funky_gong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bellClangBtn"
+        app:srcCompat="@drawable/funky_gong" />
+
+    <ImageButton
+        android:id="@+id/randomHaBtn"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/funkyGongBtn"
+        app:srcCompat="@drawable/random_ha"
+        android:contentDescription="@string/random_ha"/>
+
+    <ImageButton
+        android:id="@+id/spookyCryBtn"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomHaBtn"
+        app:srcCompat="@drawable/spooky_cry"
+        android:contentDescription="@string/spooky_cry"/>
+
+    <ImageButton
+        android:id="@+id/drumSoloBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spookyCryBtn"
+        app:srcCompat="@drawable/drum_solo"
+        android:contentDescription="@string/drum_solo"/>
+
+</android.support.constraint.ConstraintLayout>
